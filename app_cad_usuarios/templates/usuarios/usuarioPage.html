@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuario</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'usuarioPage.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    
+</head>
+<body>
+    <div class = "header">
+        <img src="{%static 'images/Logo.PNG' %}" class="logo">
+        <h9>PomoDojo</h9>
+
+    </div>
+    <div class="main">
+        <div class="profile">
+            <div class="profile-img">
+                <img src="{%static 'images/Ellipse 4.PNG' %}" class="ellipse">
+            </div>
+            <div class="profile-name">
+                <p>User Name</p>
+            </div>
+            <div class="profile-date">
+                <p>dd/mm/yyyy</p>
+            </div>
+        </div>
+        <div class="barrasDeProgresso">
+            <div class="barrasDeProgressoIndividual">
+                <p>Concentração</p>
+            </div>
+            <div class="barrasDeProgressoIndividual">
+                <p>Ciclos Concluidos</p>
+            </div>
+            <div class="barrasDeProgressoIndividual">
+                <p>Metas de ciclos</p>
+            </div>
+        </div>
+        <div>
+            <button id="personalizar" type="button"><b>Personalizar</b></button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="nav">
+            <a href="{% url 'pomodoro' %}"><img src="{% static 'images/footer/dojo 1.svg' %}"></a>
+            <a href=""><img src="{%static 'images/footer/calendario 1.svg' %}"></a>
+            <a href=""><img src="{%static 'images/footer/5803966_checklist_clipboard_task_todo_icon 1.svg' %}"></a>
+            <a href=""><img src="{%static 'images/footer/perfil 1.svg' %}"></a>
+        </div>
+
+    </div>
+
+</body>
+</html>
